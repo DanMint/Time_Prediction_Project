@@ -1,20 +1,22 @@
+import sys
+sys.path.insert
 import requests
 from bs4 import BeautifulSoup
-
+import Testing.test_url
 url = 'https://www.mbta.com/schedules/CR-Worcester/timetable' 
 
 
-response = requests.get(url)
+# response = requests.get(url)
 
-soup = BeautifulSoup(response.content, 'html.parser')
+# soup = BeautifulSoup(response.content, 'html.parser')
 
-timetable_div = soup.find('div', id='timetable')
+# timetable_div = soup.find('div', id='timetable')
 
-print(type(timetable_div))
+# print(type(timetable_div))
 
-time_table = timetable_div.text.split()
+# time_table = timetable_div.text.split()
 
-print(time_table)
+# print(time_table)
 
 
 # if timetable_div:
